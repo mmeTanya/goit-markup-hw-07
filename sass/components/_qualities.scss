@@ -1,0 +1,43 @@
+.qualities {
+  padding: 94px 0;
+
+&__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+&__item {
+  width: 270px;
+}
+
+&__background-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: $third-background-color;
+  border-radius: 4px;
+}
+
+&__name {
+  color: $primary-title-text-color;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  width: 270px;
+  margin-bottom: 10px;
+}
+
+&__description {
+  color: $primary-text-color;
+
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+
+  width: 270px;
+}
+}
