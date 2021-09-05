@@ -3,49 +3,49 @@
   padding: 94px 0;
 
   &__title {
-  @extend %title;
-}
+    @extend %title;
+  }
 
-&__list {
-  display: flex;
-  justify-content: space-between;
-}
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
 
-&__item {
-  width: 270px;
-  background: $white-color;
+  &__item {
+    width: 270px;
+    background: $white-color;
 
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
 }
 
 .team-member {
   padding: 30px 0px;
 
-&__name {
-  color: $primary-title-text-color;
+  &__name {
+    color: $primary-title-text-color;
 
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  letter-spacing: 0.03em;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
 
-  margin-bottom: 10px;
-}
+    margin-bottom: 10px;
+  }
 
-&__function {
-  color: $primary-text-color;
+  &__function {
+    color: $primary-text-color;
 
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  letter-spacing: 0.03em;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
 
-  display: block;
-}
+    display: block;
+  }
 }
 
 .social-list {
@@ -53,29 +53,26 @@
   justify-content: center;
   align-items: center;
   margin: 16px auto 0;
-}
 
-.social-list__item {
-  width: 44px;
-  height: 44px;
+  &__item {
+    width: 44px;
+    height: 44px;
 
-&:not(:last-child) {
-  margin-right: 10px;
-}
-}
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
 
-.social-list__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 12px;
-  fill: $icons-color;
-  border-radius: 50%;
-  transition: background-color $transition-duration $timing-function, fill $transition-duration $timing-function;
+  &__link {
+    fill: $icons-color;
+    @extend %social-link;
+    transition: background-color $transition-duration $timing-function,
+      fill $transition-duration $timing-function;
 
-&:hover,
-&:focus {
-  background-color: $accent-color;
-  fill: $primary-background-color;
-}
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+      fill: $primary-background-color;
+    }
+  }
 }
